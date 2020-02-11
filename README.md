@@ -15,6 +15,7 @@ Componente padre dónde se debe manejar toda la data.
 ### doneList.vue
 Componente dónde se listan todas las tareas ya realizadas.
 1.- Este componente debe tener un método que ordene las tareas por hora y fecha, así como alfabéticamente y por orden de prioridad. De manera ascendiente y descendiente.
+2.- Los métodos de ordenamiento deberán afectar solo a la data de este componente.
 
 ### selectedToDo.vue
 Componente dónde se muestra la tarea seleccionada.
@@ -22,7 +23,11 @@ Este componente debe poder mostrar la tarea seleccionada por el usuario, con la 
 
 ### toDoList.vue
 Componente dónde se listan todas las tareas pendientes de realizar. 
-1.- El punto 1 del doneList.vue también se aplica a este componente. 
+1.- El punto 1 del doneList.vue también se aplica a este componente.
+2.- Los métodos de ordenamiento deberán afectar solo a la data de este componente.
+
+### addToDo.vue
+Componente con la funcionalidad de agregar una nueva tarea con sus respectivo estado pendiente o realizado.
 
 ## Project setup
 ```
