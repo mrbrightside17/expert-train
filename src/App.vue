@@ -1,17 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <AddToDo />
+    <ToDoList />
+    <SelectedToDo />
+    <DoneList />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AddToDo from './components/addToDo'
+import ToDoList from './components/toDoList'
+import SelectedToDo from './components/selectedToDo'
+import DoneList from './components/doneList'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    AddToDo,
+    ToDoList,
+    DoneList,
+    SelectedToDo
+  },
+  data(){
+    return{
+      data: json
+    }
+  },
+  beforeCreate() {
+    console.log(this.data)
   }
 }
 </script>
